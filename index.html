@@ -98,12 +98,13 @@
           var button = document.querySelector(".navbar-btn");
           if (navbar.classList.contains("show-navbar")) {
             navbar.classList.remove("show-navbar");
-            button.innerHTML = "&#9776;";
+            button.style.transform = "rotate(0deg)";
           } else {
             navbar.classList.add("show-navbar");
-            button.innerHTML = "&#9776;&#9776;&#9776;";
+            button.style.transform = "rotate(90deg)";
           }
         }
-      </script>  
+      </script>
+  
   </body>
 </html>
