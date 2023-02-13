@@ -47,8 +47,22 @@
         width: 40px;
       }
 
-      .show-navbar {
-        width: 250px;
+      @media screen and (max-height: 450px) {
+        .navbar {
+          padding-top: 15px;
+        }
+        .navbar a {
+          font-size: 18px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .navbar {
+          width: 100%;
+        }
+        .show-navbar {
+          width: 100%;
+        }
       }
     </style>
   </head>
