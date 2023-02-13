@@ -37,6 +37,29 @@
         z-index: 1;
       }
 
+      /* Style the Navbar Button Icon */
+      .navbar-btn span {
+        display: block;
+        height: 2px;
+        width: 20px;
+        background-color: white;
+        margin: 5px 0;
+        transition: all 0.5s ease;
+      }
+
+      /* Change Navbar Button Icon when Navbar is Open */
+      .show-navbar .navbar-btn span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+      }
+
+      .show-navbar .navbar-btn span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .show-navbar .navbar-btn span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+      }
+
       /* Show the Navbar when Button is clicked */
       .show-navbar {
         left: 0;
@@ -53,7 +76,11 @@
   </head>
   <body>
     <!-- Navbar Button -->
-    <button class="navbar-btn" onclick="showNavbar()"> Show Navbar </button>
+    <button class="navbar-btn" onclick="showNavbar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
     <!-- Navbar -->
     <div class="navbar" id="navbar">
@@ -66,14 +93,17 @@
 
     <!-- JavaScript to Show/Hide the Navbar -->
     <script>
-      function showNavbar() {
-        var navbar = document.getElementById("navbar");
-        if (navbar.style.left == "0px") {
-          navbar.style.left = "-100%";
-        } else {
-          navbar.style.left = "0";
+        function showNavbar() {
+          var navbar = document.getElementById("navbar");
+          var button = document.querySelector(".navbar-btn");
+          if (navbar.classList.contains("show-navbar")) {
+            navbar.classList.remove("show-navbar");
+            button.innerHTML = "&#9776;";
+          } else {
+            navbar.classList.add("show-navbar");
+            button.innerHTML = "&#9776;&#9776;&#9776;";
+          }
         }
-      }
-    </script>
+      </script>  
   </body>
 </html>
