@@ -1,110 +1,78 @@
+<!DOCTYPE html>
 <html>
   <head>
     <style>
-      /* Style the Navbar */
       .navbar {
-        height: 100vh;
-        background-color: lightgray;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+
+      .navbar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .navbar a:hover {
+        color: #f1f1f1;
+      }
+
+      .navbar .close-btn {
         position: absolute;
         top: 0;
-        left: -100%;
-        transition: all 0.5s ease;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
       }
 
-      /* Style the Navbar Links */
-      .navbar a {
-        text-decoration: none;
-        color: black;
-        padding: 20px;
-        font-size: 18px;
-      }
-
-      /* Style the Navbar Button */
       .navbar-btn {
-        background-color: gray;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        font-size: 18px;
+        display: inline-block;
         cursor: pointer;
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        z-index: 1;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        padding: 8px;
+        height: 40px;
+        width: 40px;
       }
 
-      /* Style the Navbar Button Icon */
-      .navbar-btn span {
-        display: block;
-        height: 2px;
-        width: 20px;
-        background-color: white;
-        margin: 5px 0;
-        transition: all 0.5s ease;
-      }
-
-      /* Change Navbar Button Icon when Navbar is Open */
-      .show-navbar .navbar-btn span:nth-child(1) {
-        transform: rotate(45deg) translate(7px, 7px);
-      }
-
-      .show-navbar .navbar-btn span:nth-child(2) {
-        opacity: 0;
-      }
-
-      .show-navbar .navbar-btn span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -7px);
-      }
-
-      /* Show the Navbar when Button is clicked */
       .show-navbar {
-        left: 0;
-      }
-
-      /* Responsive Design */
-      @media (max-width: 768px) {
-        .navbar {
-          width: 80%;
-          height: 100%;
-        }
+        width: 250px;
       }
     </style>
   </head>
   <body>
-    <!-- Navbar Button -->
-    <button class="navbar-btn" onclick="showNavbar()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <!-- Navbar -->
-    <div class="navbar" id="navbar">
+    <button class="navbar-btn" onclick="showNavbar()">&#9776;</button>
+    <div id="navbar" class="navbar">
       <a href="#">Recipes</a>
       <a href="#">Ingredients</a>
       <a href="#">Camera</a>
-      <a href="#">Some</a>
       <a href="#">Settings</a>
+      <a href="javascript:void(0)" class="close-btn" onclick="showNavbar()">&times;</a>
     </div>
-
-    <!-- JavaScript to Show/Hide the Navbar -->
     <script>
-        function showNavbar() {
-          var navbar = document.getElementById("navbar");
-          var button = document.querySelector(".navbar-btn");
-          if (navbar.classList.contains("show-navbar")) {
-            navbar.classList.remove("show-navbar");
-            button.style.transform = "rotate(0deg)";
-          } else {
-            navbar.classList.add("show-navbar");
-            button.style.transform = "rotate(90deg)";
-          }
+      function showNavbar() {
+        var navbar = document.getElementById("navbar");
+        var button = document.querySelector(".navbar-btn");
+        if (navbar.classList.contains("show-navbar")) {
+          navbar.classList.remove("show-navbar");
+          button.style.transform = "rotate(0deg)";
+        } else {
+          navbar.classList.add("show-navbar");
+          button.style.transform = "rotate(90deg)";
         }
-      </script>
-  
+      }
+    </script>
   </body>
 </html>
