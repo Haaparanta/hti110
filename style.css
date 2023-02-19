@@ -20,6 +20,7 @@ body {
 
 .nav-btn {
   margin-right: 10px;
+  color: #fff; /* make the text white */
 }
 
 .user-btn {
@@ -51,18 +52,18 @@ body {
 .side-nav {
   position: fixed;
   top: 0;
-  left: 200px;
+  left: -200px;
   width: 200px;
   height: 100%;
-  background-color: #333;
-  color: #fff;
+  background-color: #fff; /* make the side nav white */
+  color: #333; /* make the text color dark */
   transition: 0.5s;
 }
 
 .side-nav button {
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: #333; /* make the text color dark */
   cursor: pointer;
   font-size: 20px;
   position: absolute;
@@ -86,9 +87,12 @@ body {
 }
 
 .side-nav a {
-  color: #fff;
+  color: #333; /* make the text color dark */
   text-decoration: none;
   font-size: 18px;
+  background-color: #f2f2f2; /* make the button light gray */
+  padding: 10px;
+  display: block;
 }
 
 /* Content styles */
