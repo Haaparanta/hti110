@@ -11,9 +11,10 @@ body {
 .top-bar {
   background-color: #333;
   color: #fff;
-  position: relative; /* use position relative */
+  position: relative;
   height: 50px;
   padding: 0 20px;
+  display: flex; /* use flexbox */
 }
 
 .nav-btn {
@@ -47,8 +48,8 @@ body {
   justify-content: center;
   width: 40px;
   height: 40px;
+  margin-left: auto; /* add this */
   margin-right: 10px;
-  margin-left: auto; /* add this property */
   cursor: pointer;
   background-color: #f8f8f8;
   border: none;
@@ -63,11 +64,11 @@ body {
 
 .logo {
   font-size: 24px;
-  text-align: center; /* center horizontally */
-  position: absolute; /* use position absolute */
-  top: 50%; /* position vertically at the center */
-  left: 50%; /* center horizontally */
-  transform: translate(-50%, -50%); /* use transform to center */
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .green {
