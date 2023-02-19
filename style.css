@@ -12,8 +12,10 @@ body {
   background-color: #333;
   color: #fff;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 50px;
+  padding: 0 20px;
 }
 
 .nav-btn {
@@ -24,16 +26,24 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* move to the right */
+}
+
+.user-btn svg {
+  fill: #fff;
+  width: 24px;
+  height: 24px;
 }
 
 .logo {
   font-size: 24px;
-  font-weight: bold;
-  text-transform: uppercase;
+  margin: 0 auto; /* center horizontally */
 }
 
 .green {
-  color: #8bc34a;
+  color: green;
 }
 
 /* Side navigation styles */
@@ -42,66 +52,56 @@ body {
   position: fixed;
   top: 0;
   left: -200px;
-  height: 100%;
   width: 200px;
-  background-color: #f2f2f2;
-  z-index: 1;
-  overflow-x: hidden;
-  padding-top: 50px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
   transition: 0.5s;
 }
 
-.close-nav {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  font-size: 30px;
-  margin-left: 50px;
+.side-nav button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
   cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+.side-nav ul {
+  list-style: none;
   margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-li {
-  padding: 10px;
+.side-nav li {
+  margin: 10px 0;
 }
 
-a {
-  display: block;
-  color: #333;
+.side-nav a {
+  color: #fff;
   text-decoration: none;
+  font-size: 18px;
 }
 
-a:hover {
-  background-color: #ddd;
+/* Content styles */
+
+.content {
+  padding: 20px;
 }
 
-/* Media queries */
+h1 {
+  font-size: 36px;
+  margin-top: 0;
+}
 
-@media only screen and (max-width: 600px) {
-  .nav-btn {
-    display: block;
-    margin: 10px;
-  }
-  
-  .logo {
-    font-size: 18px;
-  }
-  
-  .user-btn {
-    display: none;
-  }
-  
-  .side-nav {
-    width: 100%;
-    left: -100%;
-  }
-  
-  .close-nav {
-    margin-left: 10px;
-  }
+p {
+  font-size: 18px;
 }
