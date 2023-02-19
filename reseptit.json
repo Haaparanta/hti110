@@ -1,0 +1,126 @@
+{
+    "reseptit": [
+      {
+        "nimi": "Hernekeitto",
+        "kuvaus": "Perinteinen suomalainen hernekeitto.",
+        "kuva": "https://example.com/kuvat/hernekeitto.jpg",
+        "aineet": [
+          "250 g kuivattuja herneitä",
+          "1 sipuli",
+          "2 porkkanaa",
+          "1 palsternakka",
+          "1/2 juuriselleri",
+          "1 lihaliemikuutio",
+          "1 l vettä",
+          "suolaa",
+          "pippuria"
+        ],
+        "ohjeet": [
+          "Liota herneitä yön yli runsaassa vedessä.",
+          "Kaada vesi pois ja huuhtele herneet.",
+          "Kuori ja pilko sipuli, porkkanat, palsternakka ja selleri.",
+          "Laita kasvikset ja herneet kattilaan ja lisää vettä niin, että ainekset peittyvät.",
+          "Lisää lihaliemikuutio ja kuumenna kiehuvaksi.",
+          "Keitä miedolla lämmöllä noin 1,5 tuntia kunnes herneet ovat pehmeitä.",
+          "Mausta suolalla ja pippurilla."
+        ]
+      },
+      {
+        "nimi": "Lihapullat",
+        "kuvaus": "Perinteinen suomalainen lihapullaresepti.",
+        "kuva": "https://example.com/kuvat/lihapullat.jpg",
+        "aineet": [
+          "400 g jauhelihaa",
+          "1 sipuli",
+          "1 dl korppujauhoja",
+          "1 dl maitoa",
+          "1 kananmuna",
+          "1 tl suolaa",
+          "1/2 tl mustapippuria"
+        ],
+        "ohjeet": [
+          "Kuori ja pilko sipuli.",
+          "Laita korppujauhot kulhoon ja kaada maito päälle.",
+          "Anna turvota hetki.",
+          "Sekoita jauheliha, turvonneet korppujauhot, sipulit, kananmuna, suola ja mustapippuri.",
+          "Muotoile taikinasta lihapullia.",
+          "Paista lihapullat kuumalla pannulla voissa kypsiksi."
+        ]
+      },
+      {
+        "nimi": "Kanapasta",
+        "kuvaus": "Nopea ja herkullinen pastaresepti kanan kanssa.",
+        "kuva": "https://example.com/kuvat/kanapasta.jpg",
+        "aineet": [
+          "400 g pastaa",
+          "2 rintaleikettä",
+          "1 sipuli",
+          "1 valkosipulinkynsi",
+          "1 dl kermaa",
+          "1/2 dl tomaattipyrettä",
+          "1/2 tl suolaa",
+          "1/4 tl mustapippuria",
+          "1 rkl oliiviöljyä"
+        ],
+        "ohjeet": [
+          "Keitä pasta suolalla maustetussa vedessä ohjeen mukaan.",
+          "Kuori ja hienonna sipuli ja valkosipuli.",
+          "Kuutioi kanan rintaleikkeet.",
+          "Kuumenna oliiviöljy pannulla ja ruskista kanat.",
+          "Lisää sipulit pannulle ja paista vielä hetki.",
+          "Lisää tomaattipyre, kerma, suola ja mustapippuri ja anna kiehua muutama minuutti.",
+          "Tarjoile pastan kanssa."
+        ]
+      },
+      {
+        "nimi": "Pinaattiletut",
+        "kuvaus": "Herkulliset pinaattiletut sopivat vaikka lounaaksi tai iltapalaksi.",
+        "kuva": "https://example.com/kuvat/pinaattiletut.jpg",
+        "aineet": [
+          "150 g tuoretta pinaattia",
+          "3 dl maitoa",
+          "2 dl vehnäjauhoja",
+          "2 kananmunaa",
+          "1/2 tl suolaa",
+          "1/4 tl mustapippuria",
+          "voita paistamiseen"
+        ],
+        "ohjeet": [
+          "Pese ja pilko pinaatti.",
+          "Sekoita maito, vehnäjauhot, kananmunat, suola ja mustapippuri kulhossa.",
+          "Lisää pinaatti taikinaan ja sekoita hyvin.",
+          "Paista lettuja kuumalla paistinpannulla voissa molemmin puolin."
+        ]
+      },
+      {
+        "nimi": "Mustikkapiirakka",
+        "kuvaus": "Herkullinen mustikkapiirakka vaniljakastikkeen kera.",
+        "kuva": "https://example.com/kuvat/mustikkapiirakka.jpg",
+        "aineet": [
+          "3 dl vehnäjauhoja",
+          "2 dl sokeria",
+          "2 tl leivinjauhetta",
+          "1 tl vaniljasokeria",
+          "1 dl sulatettua voita",
+          "1 muna",
+          "4 dl mustikoita",
+          "2 dl kuohukermaa",
+          "1 dl maitoa",
+          "1 rkl perunajauhoja",
+          "1 rkl sokeria",
+          "1 tl vaniljasokeria"
+        ],
+        "ohjeet": [
+          "Sekoita vehnäjauhot, sokeri, leivinjauhe ja vaniljasokeri keskenään.",
+          "Lisää joukkoon sulatettu voi ja muna, sekoita hyvin.",
+          "Kaada taikina voideltuun piirakkavuokaan.",
+          "Levitä mustikat taikinan päälle.",
+          "Paista 200-asteisessa uunissa noin 25-30 minuuttia.",
+          "Sekoita kuohukerma, maito, perunajauhot, sokeri ja vaniljasokeri kattilassa.",
+          "Kuumenna sekoitellen kiehuvaksi ja anna kiehua hiljalleen muutaman minuutin ajan.",
+          "Tarjoile piirakan kera."
+        ]
+      }
+    ]
+  }
+  
