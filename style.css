@@ -18,9 +18,22 @@ body {
 
 .nav-btn {
   margin-right: 10px;
-  color: #fff;
-  cursor: pointer;
   font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+  background: none;
+  border: none;
+}
+
+.nav-btn svg {
+  fill: #fff;
+  width: 24px;
+  height: 24px;
+  transition: fill 0.3s ease;
+}
+
+.nav-btn:hover svg {
+  fill: #ccc;
 }
 
 .user-btn {
