@@ -1,84 +1,41 @@
-.topbar {
-    height: 15%;
-    background-color: #eee;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 16px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   
-  .user-icon {
-    font-size: 24px;
-    font-weight: bold;
+  .topbar {
+    height: 15%;
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
   }
   
   .logo {
-    font-size: 32px;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  .navbar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 15%;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 10%;
-  }
-  
-  .show-navbar {
-    width: 250px;
-  }
-  
-  .navbar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .navbar a:hover {
-    color: #f1f1f1;
-  }
-  
-  .navbar .close-btn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  .logo h1 {
+    margin-left: 10px;
   }
   
   .navbar-btn {
-    display: inline-block;
     cursor: pointer;
     background-color: transparent;
     border: none;
     outline: none;
-    padding: 8px;
     font-size: 50px;
   }
   
-  @media screen and (max-height: 450px) {
-    .navbar {
-      padding-top: 15px;
-    }
-    .navbar a {
-      font-size: 18px;
-    }
+  .content {
+    height: 85%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  @media screen and (max-width: 768px) {
-    .navbar {
-      width: 100%;
-    }
-    .show-navbar {
-      width: 100%;
-    }
-  }
