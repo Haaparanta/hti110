@@ -11,26 +11,24 @@ body {
 .top-bar {
   background-color: #333;
   color: #fff;
-  display: flex;
-  justify-content: center; /* center horizontally */
-  align-items: center;
-  align-self: flex-start; /* align to top */
+  position: relative; /* use position relative */
   height: 50px;
   padding: 0 20px;
 }
 
 .nav-btn {
   margin-right: 10px;
-  color: #fff; /* make the text white */
+  color: #fff;
 }
 
 .user-btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  margin-left: auto; /* move to the right */
+  position: absolute; /* use position absolute */
+  top: 50%; /* position vertically at the center */
+  right: 20px; /* align to the right */
+  transform: translateY(-50%); /* use transform to vertically align */
 }
 
 .user-btn svg {
@@ -41,6 +39,11 @@ body {
 
 .logo {
   font-size: 24px;
+  text-align: center; /* center horizontally */
+  position: absolute; /* use position absolute */
+  top: 50%; /* position vertically at the center */
+  left: 50%; /* center horizontally */
+  transform: translate(-50%, -50%); /* use transform to center */
 }
 
 .green {
@@ -55,15 +58,15 @@ body {
   left: -200px;
   width: 200px;
   height: 100%;
-  background-color: #fff; /* make the side nav white */
-  color: #333; /* make the text color dark */
+  background-color: #fff;
+  color: #333;
   transition: 0.5s;
 }
 
 .side-nav button {
   background-color: transparent;
   border: none;
-  color: #333; /* make the text color dark */
+  color: #333;
   cursor: pointer;
   font-size: 20px;
   position: absolute;
@@ -87,10 +90,10 @@ body {
 }
 
 .side-nav a {
-  color: #333; /* make the text color dark */
+  color: #333;
   text-decoration: none;
   font-size: 18px;
-  background-color: #f2f2f2; /* make the button light gray */
+  background-color: #f2f2f2;
   padding: 10px;
   display: block;
 }
