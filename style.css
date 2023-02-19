@@ -1,92 +1,107 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .topbar {
-    height: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #ddd;
-    padding: 0 16px;
-  }
-  
-  .topbar-title {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .navbar {
-    height: 10%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 15%;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .show-navbar {
-    width: 250px;
-  }
-  
-  .navbar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+/* General styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Top bar styles */
+
+.top-bar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.nav-btn {
+  margin-right: 10px;
+}
+
+.user-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.green {
+  color: #8bc34a;
+}
+
+/* Side navigation styles */
+
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: -200px;
+  height: 100%;
+  width: 200px;
+  background-color: #f2f2f2;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 50px;
+  transition: 0.5s;
+}
+
+.close-nav {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 30px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px;
+}
+
+a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #ddd;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 600px) {
+  .nav-btn {
     display: block;
-    transition: 0.3s;
+    margin: 10px;
   }
   
-  .navbar a:hover {
-    color: #f1f1f1;
+  .logo {
+    font-size: 18px;
   }
   
-  .navbar .close-btn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  .user-btn {
+    display: none;
   }
   
-  .navbar-btn {
-    display: inline-block;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    padding: 8px;
-    font-size: 50px;
+  .side-nav {
+    width: 100%;
+    left: -100%;
   }
   
-  .navbar-btn img {
-    width: 30px;
-    height: 30px;
-    filter: invert(100%);
+  .close-nav {
+    margin-left: 10px;
   }
-  
-  @media screen and (max-height: 450px) {
-    .navbar {
-      padding-top: 15px;
-    }
-    .navbar a {
-      font-size: 18px;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .navbar {
-      width: 100%;
-    }
-    .show-navbar {
-      width: 100%;
-    }
-  }
-  
+}

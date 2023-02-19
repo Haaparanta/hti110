@@ -1,9 +1,20 @@
-const navbar = document.getElementById("navbar");
-const button = document.querySelector(".navbar-btn");
+// Get the button elements
+var openNavBtn = document.querySelector('.open-nav');
+var closeNavBtn = document.querySelector('.close-nav');
 
-button.addEventListener("click", toggleNavbar);
+// Get the side navigation element
+var sideNav = document.querySelector('.side-nav');
 
-function toggleNavbar() {
-  navbar.classList.toggle("show-navbar");
-  button.classList.toggle("active");
+// Add event listeners to the buttons
+openNavBtn.addEventListener('click', openNav);
+closeNavBtn.addEventListener('click', closeNav);
+
+// Open the side navigation
+function openNav() {
+  sideNav.style.left = '0';
+}
+
+// Close the side navigation
+function closeNav() {
+  sideNav.style.left = '-200px';
 }
