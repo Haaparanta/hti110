@@ -19,6 +19,8 @@ body {
 .nav-btn {
   margin-right: 10px;
   color: #fff;
+  cursor: pointer;
+  font-size: 24px;
 }
 
 .user-btn {
